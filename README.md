@@ -18,3 +18,12 @@ Restart Apache2:
 sudo systemctl restart apache2
 ```
 
+
+
+Verify the configuration:
+```bash
+sudo anubisctl verify
+```
+````
+python3 -c 'import yaml, sys; yaml.safe_load(sys.stdin)' < botPolicies.yaml
+```
