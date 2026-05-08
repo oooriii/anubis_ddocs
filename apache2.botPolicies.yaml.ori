@@ -84,8 +84,8 @@ bots:
     action: ALLOW
     # Allow network range
     ip_range:
-      #- 1.2.3.4/32       # public IP
       - 84.88.0.0/16   # Anella Científica?
+      #- 1.2.3.4/32       # public IP
 
   - name: trusted-country # european countries
     action: WEIGH
