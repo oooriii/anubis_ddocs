@@ -134,7 +134,8 @@ bots:
   # Block hidden files (.env, .git, .sql, etc.)
   - name: hidden-files
     # Block any file that starts with a dot, except .well-known
-    path_regex: ^/\.(?!well-known).*
+    #path_regex: ^/\.(?!well-known).*
+    path_regex: ^/\.(env|git|ssh|bash_history|config|docker|npmrc)
     action: DENY
 
   - name: backup-and-sql-files
